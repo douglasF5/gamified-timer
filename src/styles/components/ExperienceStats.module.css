@@ -1,0 +1,19 @@
+.experienceStatsContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.progressBarContainer {
+    flex: 1;
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--surface-tertiary);
+}
+
+.progressBarIndicator {
+    height: 100%;
+    border-radius: 3px;
+    background-image: var(--accent-green-gradient);
+    transition: width 100ms ease-out;
+}

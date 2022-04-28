@@ -1,0 +1,200 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* COLORS */
+    --on-surface-primary: #2E384D;
+    --on-surface-primary-inverted: #FFFFFF;
+    --on-surface-secondary: rgba(46, 56, 77, 0.73);
+    --on-surface-tertiary: rgba(46, 56, 77, 0.58);
+    
+    --accent-red: #E10D40;
+    --accent-red-over: #D40D3C;
+    --accent-green: #2AAA30;
+    --accent-green-over: #279F2D;
+    --accent-green-gradient: linear-gradient(270deg, #2AAA30 0.04%, #4DD82B 100%);
+    --accent-indigo: #4C52FA;
+    --accent-indigo-over: #3E44FA;
+    --accent-twitter: #0F8FC6;
+    --accent-twitter-over: #189ed7;
+
+    --surface-primary: #F2F3F5;
+    --over-surface-primary: rgba(46, 56, 77, 0.08);
+    --surface-gradient: linear-gradient(180deg, #FFFFFF 0%, #f4f4f4 100%);
+    --surface-secondary: #FFFFFF;
+    --surface-tertiary: rgba(46, 56, 77, 0.18);
+
+    --outline-primary: rgba(46, 56, 77, 0.2);
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--surface-primary);
+    color: var(--on-surface-primary);
+    -webkit-font-smoothing: antialiased;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+html:focus-within {
+    scroll-behavior: auto;
+}
+*,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+main {
+    padding: 0 3rem 2.5rem;
+    min-width: 300px;
+}
+
+/* Uttility classes */
+.content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.txt-display {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 100%;
+}
+
+.txt-title-L {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.txt-title-S {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+.txt-base-L {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 135%;
+}
+
+.txt-base-S {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 135%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.onelnr {
+    line-height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        padding: 0 1.5rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main {
+        padding: 0 1rem 2.5rem;
+    }
+
+    .txt-display {
+        font-size: 4rem;
+    }
+
+    .txt-title-S {
+        font-size: 1.25rem;
+    }
+
+    .txt-title-L {
+        font-size: 1.5rem;
+    }
+
+    .txt-base-L {
+        font-size: 1rem;
+    }
+
+    .txt-base-S {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.container > * {
+    flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    .container > *:last-child {
+        margin-bottom: 0.75rem;
+    }
+}

@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    color: var(--on-surface-secondary);
+}
+
+.container h3 {
+    color: var(--on-surface-primary);
+}
+
+.container p {
+    max-width: 32ch;
+}

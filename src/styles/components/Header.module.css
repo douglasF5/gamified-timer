@@ -1,0 +1,26 @@
+.headerWrapper {
+    padding: 2.5rem 3rem 2.5rem;
+    min-width: 300px;
+}
+
+.headerContent > *:first-child {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 769px) {
+    .headerWrapper {
+        padding: 2.5rem 3rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .headerWrapper {
+        padding: 1.5rem 1.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .headerWrapper {
+        padding: 1rem 1rem 1rem;
+    }
+}

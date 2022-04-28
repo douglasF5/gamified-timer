@@ -1,0 +1,87 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 468px;
+    min-height: 512px;
+    padding: 2rem;
+    border-radius: 8px;
+    border: solid 2px transparent;
+    background-image: var(--surface-gradient);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.13);
+    transition-property: border, box-shadow;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+
+.container.ready {
+    border: solid 2px var(--accent-indigo);
+    box-shadow: 0px 13px 21px rgba(0, 0, 0, 0.08), 0px 21px 55px rgba(0, 0, 0, 0.13);
+    z-index: 2;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.left > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--over-surface-primary);
+    border-radius: 20px;
+}
+
+.count {
+    color: var(--accent-indigo);
+}
+
+.right {
+    color: var(--accent-indigo);
+    text-align: left;
+}
+
+.cardMessage {
+    text-align: center;
+    color: var(--on-surface-tertiary);
+    max-width: 213px;
+}
+
+@media only screen and (max-width: 769px) {
+    .container {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        gap: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        padding: 1.25rem;
+        min-height: 400px;
+    }
+
+    .left > div {
+        width: 2rem;
+        height: 2rem;
+    }
+}

@@ -1,0 +1,60 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0 0% 0% / 0.5);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 390px;
+    border-radius: 0.5rem;
+    padding: 2.5rem 3.25rem;
+    background-color: var(--surface-secondary);
+    text-align: center;
+}
+
+.container header {
+    background: url(../../../public/laurels.png) no-repeat center;
+    background-size: 60%;
+    font-size: 8.75rem;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--accent-indigo);
+}
+
+.container p {
+    color: var(--on-surface-secondary);
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    white-space: nowrap;
+    transition: background-color 100ms ease-in-out;
+}
+
+.closeButton:hover {
+    background-color: var(--over-surface-primary);
+}
+
+.closeButton:active {
+    transform: translateY(4%);
+}

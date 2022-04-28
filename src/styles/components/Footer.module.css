@@ -1,0 +1,10 @@
+.footerWrapper {
+    padding: 0 3rem 2.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--on-surface-secondary);
+}
+
+.footerWrapper a {
+    color: var(--accent-indigo);
+}

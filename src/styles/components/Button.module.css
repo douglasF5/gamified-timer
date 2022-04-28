@@ -1,0 +1,73 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: solid 1px transparent;
+    white-space: nowrap;
+}
+
+.button:active {
+    transform: translateY(4%);
+}
+
+.default {
+    color: var(--on-surface-primary-inverted);
+    background-color: var(--accent-indigo);
+    box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.default,
+.neutral,
+.positive,
+.negative,
+.twitter {
+    transition: background-color 150ms ease-in-out;
+}
+
+.default:hover {
+    background-color: var(--accent-indigo-over);
+}
+
+.neutral {
+    color: var(--on-surface-secondary);
+    background-color: var(--surface-secondary);
+    border-color: var(--outline-primary);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.neutral:hover {
+    background-color: var(--over-surface);
+}
+
+.positive {
+    color: var(--on-surface-primary-inverted);
+    background-color: var(--accent-green);
+    box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.positive:hover {
+    background-color: var(--accent-green-over);
+}
+
+.negative {
+    color: var(--on-surface-primary-inverted);
+    background-color: var(--accent-red);
+    box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.negative:hover {
+    background-color: var(--accent-red-over);
+}
+
+.twitter {
+    color: var(--on-surface-primary-inverted);
+    background-color: var(--accent-twitter);
+    box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.twitter:hover {
+    background-color: var(--accent-twitter-over);
+}

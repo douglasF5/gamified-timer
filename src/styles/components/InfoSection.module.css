@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    border-left: solid 1px var(--outline-primary);
+}
+
+.userInfo img {
+    border-radius: 1rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stat {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+@media only screen and (max-width: 769px) {
+    .stats {
+        gap: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 627px) {
+    .uHide {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+    .userInfo {
+        justify-content: flex-start;
+    }
+}
