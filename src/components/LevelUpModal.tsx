@@ -22,7 +22,6 @@ export function LevelUpModal() {
                     <strong className='txt-title-L'>Parabéns</strong>
                     <p className='txt-base-L'>Você alcançou um novo nível!</p>
                 </div>
-                <Button type='twitter' icon={iconTwitter}>Compartilhar no Twitter</Button>
             </div>
         </div>
     );
