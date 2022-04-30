@@ -1,6 +1,6 @@
 # Gamified timer
 
-Pomodoro timer for deep-work sessions with some gaming elements to bring more fun, motivation, and encourage you to take healthy breaks between work sessions. [Interact with the live project here](https://gamified-timer-douglasf.vercel.app) (the app was built in Brazillian Portuguese).
+Pomodoro timer for deep-work sessions with some gaming elements to bring more fun, motivation, and encourage you to take healthy breaks between work sessions. [Interact with the live project here](https://gamified-timer-douglasf.vercel.app).
 
 How it works:
 
